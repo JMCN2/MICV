@@ -1,3 +1,12 @@
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+});
+
+// Bloquear copiar con Ctrl+C
+document.addEventListener("copy", function(e) {
+    e.preventDefault();
+});
+
 document.getElementById("download").addEventListener("click", async () => {
     const button = document.getElementById("download");
     const originalText = button.innerHTML;
